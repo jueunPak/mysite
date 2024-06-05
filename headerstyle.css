@@ -1,0 +1,21 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+}
+
+.logo img {
+    height: 50px;
+}
+
+/* 추가된 부분 */
+.dark-menu .menu a {
+    color: #fff;
+    transition: color 0.3s ease;
+}

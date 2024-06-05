@@ -1,0 +1,157 @@
+
+.container {
+    display: flex;
+    height: 100vh;
+    transition: transform 0.3s ease;
+
+}
+
+.section {
+    min-width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+
+
+.manifesto-link {
+    color: #888;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.manifesto-link:hover {
+    color: #fff;
+}
+
+
+.section.work {
+    background-color: #d0d0d0;
+    color: #000;
+    flex-direction: column;
+}
+
+.section.projects {
+    background-color: #a0a0a0;
+    color: #000;
+    flex-direction: column;
+}
+
+.section.contact {
+    background-color: #707070;
+    color: #fff;
+    flex-direction: column;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.section p {
+    font-size: 1.2rem;
+}
+
+
+/*intro*/
+.txtBox1 {
+    padding: 50px;
+}
+.txtBox1 p {
+    text-align: center;
+}
+.txtBox2 {
+    padding: 10px;
+}
+.txtBox3 {
+    border-bottom: 1px solid #fff;
+}
+.txtBox4 {
+    border-bottom: 1px solid #fff;
+}
+.txtBox5 {
+    border-bottom: 1px solid #fff;
+}
+.txtBox6 {
+    border-bottom: 1px solid #fff;
+}
+h1.introName {
+    font-size: 160px;
+    line-height: 120px;
+    margin: 0;
+    padding: 0;
+}
+h1.introSkill {
+    font-size: 120px;
+    line-height: 100px;
+    margin: 0;
+    padding: 0;
+}
+.section.intro {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.intro-left-content,
+.intro-right-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro-left-content {
+    align-items: flex-start;
+    max-width: 100%;
+    width: 100%;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.intro-right-content {
+    align-items: flex-end;
+    text-align: right;
+    max-width: 30%;
+    width: 100%;
+    margin-right: 10px;
+}
+
+
+
+
+/*about*/
+
+.section.about {
+    background-color: #C8EF45;
+    color: #000;
+    flex-direction: column;
+}
+
+.about-left-content,
+.about-right-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-left-content {
+    align-items: flex-start;
+    max-width: 100%;
+    width: 900px;
+}
+
+.about-right-content {
+    align-items: flex-end;
+    text-align: right;
+    
+}
+.myphoto {
+    text-align: left;
+    width: 50%;
+}
