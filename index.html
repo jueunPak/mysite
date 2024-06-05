@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/headerstyle.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/headerstyle.css">
+    <link rel="stylesheet" href="js/script.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>Park JuEun Portfolio Site</title>
@@ -15,28 +17,14 @@
             margin: 0;
             padding: 0;
             overflow: hidden;
-            font-family: Arial, sans-serif;
         }
     </style>
 </head>
 
 <body>
-    <div class="header light-menu">
-        <div class="leftHeader">
-            <div class="logo">
-                <img src="/img/jueunlogo5.png" alt="Logo">
-            </div>
-        </div>
-        <div class="rightHeader">
-            <div class="menu">
-                <a class="menuitem" href="#intro">Intro</a>
-                <a class="menuitem" href="#about">About</a>
-                <a class="menuitem" href="#work">Work</a>
-                <a class="menuitem" href="#projects">Projects</a>
-                <a class="menuitem" href="#contact">Contact</a>
-            </div>
-        </div>
-    </div>
+<section>
+    <iframe id="headerIframe" class="header-iframe" src="header.html" style="width: 100%;"></iframe>
+</section>
     <div class="container">
         <!--intro-->
         <div id="intro" class="section intro page1">
@@ -73,7 +61,7 @@
                     <p><a href="#" class="manifesto-link manifesto-link1">Read the manifesto →</a></p>
                 </div>
                 <div class="txtBox txtBox5">
-                    <h1>PRODUCTION CASE</h1>
+                    <h1>Projects</h1>
                     <p><a href="#" class="manifesto-link manifesto-link2">Read the manifesto →</a></p>
                 </div>
                 <div class="txtBox txtBox6">
@@ -84,10 +72,10 @@
         </div>
         <!--intro end-->
 
-        <!--about-->
-        <div id="about" class="section about page2">
+        <!--publishing-->
+        <div id="publishing" class="section publishing page2">
             <div>
-                <div class="title-content about-left-content">
+                <div class="title-content publishing-left-content">
                     <div class="txtBox txtBox2-1"> 
                         <p>2019 - 2024</p>
                         <img src="img/jueun02.jpg" class="myphoto">
@@ -95,9 +83,9 @@
                         <p><a href="#" class="manifesto-link manifesto-link4">Read the manifesto →</a></p>
                     </div>
                 </div>
-                <div class="title-content about-right-content">
+                <div class="title-content publishing-right-content">
                     <div class="txtBox txtBox2-2">
-                        <h1>PRODUCTION CASE</h1>
+                        <h1>Projects</h1>
                         <p><a href="#" class="manifesto-link manifesto-link5">Read the manifesto →</a></p>
                     </div>
                     <div class="txtBox txtBox2-3">
@@ -107,32 +95,51 @@
                 </div>
             </div>
             <div>
-                <div class="title-content about-bottom-content">
+                <div class="title-content publishing-bottom-content">
                     <div class="txtBox txtBox2-4"> 
-                        <h1 class="aboutBottomTxt1">Silvia Sguotti</h1>
+                        <h1 class="publishingBottomTxt1">Silvia Sguotti</h1>
                     </div>
                 </div>
             </div>
         </div>
-        <!--about end-->
+        <!--design end-->
 
-        <div id="work" class="section work page3">
+        <div id="design" class="section design page3">
             <div class="title-content title-content3">
-                <h2>My Work</h2>
+                <h2>My design</h2>
                 <p>This section showcases my work.</p>
             </div>
             <div class="title-content title-content4">
-                <h2>Projects</h2>
+                <h2>design2</h2>
                 <p>This section highlights some of my projects.</p>
             </div>
         </div>
-        <div id="contact" class="section contact page5">
+        <div id="projects" class="section projects page5">
             <div class="title-content title-content5">
-                <h2>Contact</h2>
+                <h2>projects</h2>
+                <p>This section provides contact information.</p>
+            </div>
+        </div>
+        <div id="skill" class="section skill page6">
+            <div class="title-content title-content6">
+                <h2>skill</h2>
+                <p>This section provides contact information.</p>
+            </div>
+        </div>
+        <div id="about" class="section about page7">
+            <div class="title-content title-content7">
+                <h2>about</h2>
+                <p>This section provides contact information.</p>
+            </div>
+        </div>
+        <div id="contact" class="section contact page8">
+            <div class="title-content title-content8">
+                <h2>contact</h2>
                 <p>This section provides contact information.</p>
             </div>
         </div>
     </div>
+
 
     <script>
         let container = document.querySelector('.container');
@@ -181,6 +188,7 @@
             });
         }
 
+
         window.addEventListener('wheel', (e) => {
             targetPosition += e.deltaY > 0 ? scrollSpeed : -scrollSpeed;
             targetPosition = Math.max(0, Math.min(targetPosition, container.scrollWidth - window.innerWidth));
@@ -192,6 +200,8 @@
 
         window.addEventListener('resize', updateHeader);
         window.addEventListener('load', updateHeader);
+
+        
     </script>
 </body>
 
