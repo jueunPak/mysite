@@ -1,0 +1,111 @@
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <style data-styles="">
+        ion-icon {
+            visibility: hidden
+        }
+
+        .hydrated {
+            visibility: inherit
+        }
+    </style>
+    <title>web-page</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/css/uikit.min.css">
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/js/uikit-icons.min.js"></script>
+    <!--style.css-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/headerstyle.css">
+    <link rel="stylesheet" href="css/publishingstyle.css">
+
+    <!--ionicon-->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+    <style type="text/css">
+        @font-face {
+            font-weight: 400;
+            font-style: normal;
+            font-family: circular;
+
+            src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Book.woff2') format('woff2');
+        }
+
+        @font-face {
+            font-weight: 700;
+            font-style: normal;
+            font-family: circular;
+
+            src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Bold.woff2') format('woff2');
+        }
+    </style>
+    <script src="https://cdn.themesinfo.com/detector.js"></script>
+</head>
+
+<body cz-shortcut-listen="true">
+    <div class="container">
+        <div class="inner">
+            <section>
+                <iframe id="headerIframe" class="header-iframe" src="header.html" style="width: 100%;"></iframe>
+            </section>
+
+            <div class="mobile-wrapper">
+                <div class="my-lightbox uk-position-relative uk-visible-toggle uk-light uk-slider uk-slider-container"
+                    tabindex="-1" uk-slider="clsActivated: uk-transition-active; center: true">
+                    <ul class="slide-mobile uk-slider-items uk-grid" style="transform: translate3d(-775px, 0px, 0px);">
+                        <li class="uk-width-3-4 uk-active uk-transition-active" tabindex="-1">
+                            <div class="slide-mobile-inner uk-panel">
+                                <a href="mobile-page-bluebottle.html"><img src="img/apppublishing_img/mobile-bluebottle-main.png"
+                                        alt=""></a>
+                                <div
+                                    class="mobile-overlay uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                                    <h3 class="uk-margin-remove">BLUE-BOTTLE Mobile App</h3>
+                                    <p class="uk-margin-remove">'Blue Bottle' 이라는 카페브랜드를 모바일 버전으로 리디자인</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="uk-width-3-4" tabindex="-1" >
+                            <div class="uk-panel">
+                                <a href="mobile-page-hermes.html">
+                                    <img src="img/apppublishing_img/mobile-hermes-main.png" alt=""></a>
+                                <div
+                                    class="mobile-overlay uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                                    <h3 class="uk-margin-remove">HERMES</h3>
+                                    <p class="uk-margin-remove">'HERMES' 이라는 패션 브랜드를 모바일 버전으로 리디자인</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="uk-width-3-4" tabindex="-1" style="order: -2;">
+                            <div class="uk-panel">
+                                <a href="mobile-page-foodman.html">
+                                    <img src="img/apppublishing_img/mobile-food-main.png" alt="">
+                                </a>
+                                <div
+                                    class="mobile-overlay uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                                    <h3 class="uk-margin-remove">배달의 민족</h3>
+                                    <p class="uk-margin-remove">'배달의 민족' 이라는 모바일 배달 어플 반응형으로 제작</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <!--<a class="mobile-left uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+          <a class="mobile-right uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>-->
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div id="loom-companion-mv3" ext-id="liecbddmkiiihnedobmlmillhodjkdmb">
+        <section id="shadow-host-companion"></section>
+    </div>
+</body>
+
+</html>

@@ -8,13 +8,13 @@
     align-items: center;
     justify-content: space-between;
     transition: transform 0.3s ease;
+    background-color: #0000003b;
 }
 
 .logo img {
     height: 50px;
 }
 
-/* 추가된 부분 */
 .dark-menu .menu a {
     color: #fff;
     transition: color 0.3s ease;
@@ -25,5 +25,9 @@
 }
 
 .header-iframe {
-    background-color: #000;
+    background-color: rgba(255, 255, 255, 0);
 }
+
+/* .section.publishing > .menu a {
+    color: #000;
+} */
