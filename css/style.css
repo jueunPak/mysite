@@ -408,8 +408,7 @@ h1.aboutBottomTxt1 {
       background-position: center;
       align-items: end;
       justify-content: flex-start;
-
-      
+      border-radius: 0 50px 50px 0;      
 }
 /* @keyframes fadeIn {
   from {
@@ -432,38 +431,90 @@ h1.aboutBottomTxt1 {
 
 /*projects*/
 
-.section.projects {
-    background-color: #fff;
-    color: #000;
-    flex-direction: column;
-}
-
-
-
-
-/*skill*/
-
-.section.skill {
+.section.projects {    
     background-color: #000;
     color: #000;
-    flex-direction: column;
+      /* animation: fadeIn 1s ease forwards; */
+}
+section.projectbg {
+  display: flex;
+  flex-direction: column;
+    background: #fff url('../img/gpt-mainimg1.png');
+    background-position: center;
+    align-items: end;
+    justify-content: flex-start;
+    border-radius: 0 50px 50px 0; 
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 
 /*about*/
 
 .section.design {
-    background-color: #96BAFF;
+  background-color: #e6f3f5;
+  color: #000;
+  flex-direction: column;
+}
+section.designbg {
+  display: flex;
+  flex-direction: column;
+    background: #000000 url('../img/gpt-mainimg1.png');
+    background-position: center;
+    align-items: end;
+    justify-content: flex-start;
+    border-radius: 0 50px 50px 0; 
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+/*skill*/
+
+.section.skill {
+    background-color: #fff;
     color: #000;
     flex-direction: column;
 }
+section.skillbg {
+  display: flex;
+  flex-direction: column;
+    background: #e6f3f5 url('../img/gpt-mainimg1.png');
+    background-position: center;
+    align-items: end;
+    justify-content: flex-start;
+    border-radius: 0 50px 50px 0; 
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 
 /*contact*/
 
 .section.contact {
-    background-color: #D8F8B7;
-    color: #000;
+    background-color: #000;
+    color: #fff;
     flex-direction: column;
+}
+
+section.contactbg {
+  display: flex;
+  flex-direction: column;
+    background: #fff url('../img/gpt-mainimg1.png');
+    background-position: center;
+    align-items: end;
+    justify-content: flex-start;
+    border-radius: 0 50px 50px 0; 
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 
